@@ -1,21 +1,16 @@
 #Aufgabe 4
-import random
-import string
+from random import choice, randint
+from string import ascii_letters, digits
 
 
 def passwort_generator():
-    strings_aus_Buchstaben = string.ascii_letters
-    print(strings_aus_Buchstaben)
+    passwort = []
+    char_num = randint(8, 200)
 
-    strings_aus_Zahlen = string.digits
-    print(strings_aus_Zahlen)
-    print("")
+    strings_aus_zahlen_buchstaben = ascii_letters + digits
 
-    for durchlauf in range(8):
-        passwort = []
-        passwort.append(random.choice(strings_aus_Buchstaben))
-        passwort.append(random.choice(strings_aus_Zahlen))
-        print(passwort, end="")
+    for i in range(char_num+1):
+        passwort.append(choice(strings_aus_zahlen_buchstaben))
+    return "".join(passwort)
 
-passwort_generator()
-print("")
+print(passwort_generator())
