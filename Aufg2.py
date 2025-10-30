@@ -6,9 +6,9 @@ def countdown(zahl):
         for durchlauf in range(zahl, 0, -1):
             print(durchlauf)
             time.sleep(1)
+        print("---Lift off---")
     else:
         print("Ungültige Eingabe, da Zahl ist kleiner als 1 ist")
-    print("Lift off")
 
 eingabe = int(input("Gebe ein Zahl ein die >= 1 ist: "))
 countdown(eingabe)

@@ -12,6 +12,7 @@ def zahlenraten():
             print(f"Noch {durchlauf - 1} versuche")
             if durchlauf == 1:
                 print("Keine Versuche mehr")
+                print("Die gesuchte Zahl war:", zufallszahl)
             continue
 
         elif eingabe < zufallszahl:
@@ -19,6 +20,7 @@ def zahlenraten():
             print(f"Noch {durchlauf - 1} versuche")
             if durchlauf == 1:
                 print("Keine Versuche mehr")
+                print("Die gesuchte Zahl war:", zufallszahl)
             continue
 
         else:
