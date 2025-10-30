@@ -9,7 +9,7 @@ def passwort_generator():
     #Zeichen und Zahlen werden zusammengesetzt
     strings_aus_zahlen_buchstaben = ascii_letters + digits
 
-    for i in range(char_num+1):
+    for i in range(char_num):
         passwort.append(choice(strings_aus_zahlen_buchstaben))
     return "".join(passwort)        #.join ersetzt Zeichen
 
