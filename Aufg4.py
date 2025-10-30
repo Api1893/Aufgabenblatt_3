@@ -2,7 +2,6 @@
 from random import choice, randint
 from string import ascii_letters, digits
 
-
 def passwort_generator():
     passwort = []
     char_num = randint(8, 200)
