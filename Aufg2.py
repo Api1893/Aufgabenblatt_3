@@ -1,4 +1,3 @@
-#Aufgabe 2
 import time
 
 def countdown(zahl):
