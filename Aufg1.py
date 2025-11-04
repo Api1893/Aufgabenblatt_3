@@ -1,4 +1,3 @@
-#Aufgabe 1
 import random
 from traceback import print_tb
 
